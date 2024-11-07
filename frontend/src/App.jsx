@@ -2,6 +2,7 @@ import About from './components/About'
 import Header from './components/Header'
 import Home from './components/Home'
 import History from './components/History'
+import Connect from './components/Connect'
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Home />
       <About />
       <History />
+      <Connect />
+      
     </div>
   )
 }
