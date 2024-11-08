@@ -1,21 +1,40 @@
-import React from 'react'
-import logo from '../assets/images/logo.png'
+import React from "react";
+import logo from "../assets/images/logo.png";
 
 function Header() {
   return (
-    <div className='flex justify-between items-center px-4 pt-2'>
-        <div>
-            <img className="h-16" src={logo} alt="" />
-        </div>
-        <div className='font-poppins font-medium [&>span]:px-4 [&>span]:hover:cursor-pointer'>
-            <span className='hover:underline underline-offset-4 decoration-[1.5px]'>Home</span>
-            <span className='hover:underline underline-offset-4 decoration-[1.5px]'>About</span>
-            <span className='hover:underline underline-offset-4 decoration-[1.5px]'>History</span>
-            <span className='hover:underline underline-offset-4 decoration-[1.5px]'>Connect</span>
-        </div>
-        <div className='w-[100px]'></div>
+    <div className="head flex justify-between items-center px-4 pt-2">
+      <div>
+        <img className="h-16" src={logo} alt="" />
+      </div>
+      <div
+        className="nav font-p
+      oppins font-semibold space-x-6 "
+      >
+        <a href="">
+          <span className="hover:underline hover:cursor-pointer underline-offset-4 decoration-[1.5px]">
+            Home
+          </span>
+        </a>
+        <a href="#about">
+          <span className="hover:underline hover:cursor-pointer underline-offset-4 decoration-[1.5px]">
+            About
+          </span>
+        </a>
+        <a href="#history">
+          <span className="hover:underline hover:cursor-pointer underline-offset-4 decoration-[1.5px]">
+            History
+          </span>
+        </a>
+        <a href="#connect">
+          <span className="hover:underline hover:cursor-pointer underline-offset-4 decoration-[1.5px]">
+            Connect
+          </span>
+        </a>
+      </div>
+      <div className="w-[100px]"></div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
