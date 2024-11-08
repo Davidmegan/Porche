@@ -7,100 +7,163 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "./components/Footer";
+import AutoDisappearingTireTrackCursor from "./components/AutoDisappearingTireTrackCursor";
 
 function App() {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-    let t1 = gsap.timeline();
-    let t2 = gsap.timeline();
     //home
-    t1.from(".head", {
+    gsap.from(".head", {
       y: -100,
       opacity: 0,
+      delay: 0.2,
       ease: "power4.out",
     });
-    t1.from(".nav span", {
+    gsap.from(".nav span", {
       y: -100,
       opacity: 0,
+      delay: 0.5,
       duration: 1,
       stagger: 0.2,
     });
-    t1.from(".ti-1", {
+    gsap.from(".ti-1", {
       y: 100,
       opacity: 0,
+      delay: 1.5,
       duration: 1,
       ease: "power4.out",
     });
-    t1.from(".car1", {
+    gsap.from(".car1", {
       x: 2000,
+      delay: 2,
       duration: 1.5,
       ease: "power4.out",
     });
-    t1.from(".pa-1", { x: -100, opacity: 0, duration: 1, ease: "power4.out" });
-    t1.from(".svg1", {
+    gsap.from(".pa-1", {
+      x: -100,
+      opacity: 0,
+      delay: 3,
+      duration: 1,
+      ease: "power4.out",
+    });
+    gsap.from(".svg1", {
       x: 100,
       opacity: 0,
       duration: 1,
+      delay: 3.5,
       stagger: 0.2,
       ease: "power4.out",
     });
     //about
-    t1.from(".ti-2", {
+    gsap.from(".ti-2", {
       y: 100,
       opacity: 0,
-      duration: 1,
+
+      duration: 3,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-2",
+        start: "top 40%",
+      },
     });
-    t1.from(".pa-2", {
+    gsap.from(".pa-2", {
       y: 100,
       opacity: 0,
+      delay: 1,
       duration: 1,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-2",
+        start: "top 40%",
+      },
     });
-    t1.from(".car2", {
+    gsap.from(".car2", {
       duration: 1,
       opacity: 0,
+      delay: 1.5,
       x: -300,
       rotation: 15,
       ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".ti-2",
+        start: "top 40%",
+      },
     });
-    t1.from(".svg2", {
+    gsap.from(".drift", {
+      duration: 2,
+      opacity: 0,
+      delay: 1.7,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".ti-2",
+        start: "top 40%",
+      },
+    });
+    gsap.from(".svg2", {
       x: 100,
       opacity: 0,
       duration: 1,
       stagger: 0.2,
+      delay: 2,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-2",
+        start: "top 40%",
+      },
     });
     //history
-    t1.from(".ti-3", {
+    gsap.from(".ti-3", {
       y: 100,
       opacity: 0,
       duration: 1,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-3",
+        start: "top 40%",
+        delay: 1,
+      },
     });
-    t1.from(".pa-3", {
+    gsap.from(".pa-3", {
       y: 100,
       opacity: 0,
       duration: 1,
+      delay: 0.5,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-3",
+        start: "top 40%",
+        delay: 1,
+      },
     });
-    t1.from(".car3", {
+    gsap.from(".car3", {
       x: -100,
       opacity: 0,
       duration: 1,
+      delay: 1.2,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-3",
+        start: "top 40%",
+        delay: 1,
+      },
     });
-    t1.from(".svg3", {
+    gsap.from(".svg3", {
       x: 100,
       opacity: 0,
       duration: 1,
       stagger: 0.2,
+      delay: 1.7,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-3",
+        start: "top 40%",
+        delay: 1,
+      },
     });
     //connect
-    t1.from(".ti-4", {
+    gsap.from(".ti-4", {
       y: 100,
       opacity: 0,
       duration: 1,
@@ -108,38 +171,64 @@ function App() {
       scrollTrigger: {
         trigger: ".ti-4",
         start: "top 80%",
+        delay: 1,
       },
     });
-    t1.from(".pa-4", {
+    gsap.from(".pa-4", {
       y: 100,
       opacity: 0,
       duration: 1,
+      delay: 0.5,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-4",
+        start: "top 80%",
+        delay: 1,
+      },
     });
-    t1.from(".car4", {
+    gsap.from(".car4", {
       x: -100,
       opacity: 0,
+      delay: 1,
       duration: 1,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-4",
+        start: "top 80%",
+        delay: 1,
+      },
     });
-    t1.from(".svg4", {
+    gsap.from(".svg4", {
       x: 100,
       opacity: 0,
       duration: 1,
       stagger: 0.2,
+      delay: 1.5,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-4",
+        start: "top 80%",
+        delay: 1,
+      },
     });
 
-    t1.from(".pa-5", {
+    gsap.from(".pa-5", {
       y: 100,
       opacity: 0,
       duration: 1,
+      delay: 2,
       ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-4",
+        start: "top 80%",
+        delay: 1,
+      },
     });
   });
 
   return (
     <div className="bg-[#D9D9D9] overflow-hidden ">
+      <AutoDisappearingTireTrackCursor />
       <Header />
       <Home />
       <About />
