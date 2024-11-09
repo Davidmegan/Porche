@@ -8,6 +8,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "./components/Footer";
 import AutoDisappearingTireTrackCursor from "./components/AutoDisappearingTireTrackCursor";
+import Model from "./components/Model";
+import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   gsap.registerPlugin(useGSAP);
@@ -65,7 +67,7 @@ function App() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".ti-2",
-        start: "top 40%",
+        start: "top 60%",
       },
     });
     gsap.from(".pa-2", {
@@ -76,7 +78,7 @@ function App() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".ti-2",
-        start: "top 40%",
+        start: "top 60%",
       },
     });
     gsap.from(".car2", {
@@ -88,7 +90,7 @@ function App() {
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".ti-2",
-        start: "top 40%",
+        start: "top 60%",
       },
     });
     gsap.from(".drift", {
@@ -98,7 +100,7 @@ function App() {
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".ti-2",
-        start: "top 40%",
+        start: "top 60%",
       },
     });
     gsap.from(".svg2", {
@@ -110,7 +112,7 @@ function App() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".ti-2",
-        start: "top 40%",
+        start: "top 60%",
       },
     });
     //history
@@ -121,7 +123,7 @@ function App() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".ti-3",
-        start: "top 40%",
+        start: "top 60%",
         delay: 1,
       },
     });
@@ -133,7 +135,7 @@ function App() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".ti-3",
-        start: "top 40%",
+        start: "top 60%",
         delay: 1,
       },
     });
@@ -145,7 +147,7 @@ function App() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".ti-3",
-        start: "top 40%",
+        start: "top 60%",
         delay: 1,
       },
     });
@@ -158,7 +160,19 @@ function App() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".ti-3",
-        start: "top 40%",
+        start: "top 60%",
+        delay: 1,
+      },
+    });
+    gsap.from(".model", {
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+      delay: 3,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".ti-3",
+        start: "top 60%",
         delay: 1,
       },
     });
@@ -227,12 +241,13 @@ function App() {
   });
 
   return (
-    <div className="bg-[#D9D9D9] overflow-hidden ">
+    <div className="bg-[#D9D9D9] dark:bg-gray-900  overflow-hidden ">
       <AutoDisappearingTireTrackCursor />
       <Header />
       <Home />
       <About />
       <History />
+      <Model />
       <Connect />
       <Footer />
     </div>

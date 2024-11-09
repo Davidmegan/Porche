@@ -16,14 +16,16 @@ function About() {
         <div>
           <div className="flex flex-col leading-none ml-5 justify-center">
             <div className="pb-5 ti-2">
-              <h1 className="text-8xl font-porsche font-medium">About</h1>
-              <div className="text-right font-porsche">
+              <h1 className="text-8xl dark:text-white  font-porsche font-medium">
+                About
+              </h1>
+              <div className="text-right dark:text-white  font-porsche">
                 Top Speed:{" "}
                 <span className="font-porsche text-red-800">296 km/hr</span>
               </div>
               <h2 className="text-5xl font-porsche text-red-800 py-4">911</h2>
             </div>
-            <p className="font-poppins pa-2 pt-10 w-[75%] leading-6 z-10 ">
+            <p className="font-poppins dark:text-white  pa-2 pt-10 w-[75%] leading-6 z-10 ">
               The Porsche 911 is more than just a car, it’s an automotive icon
               that has captured the hearts of enthusiasts, celebrities, and
               everyday drivers alike for over half a century. With its distinct

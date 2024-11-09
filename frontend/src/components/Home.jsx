@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="flex items-center px-2 overflow-hidden pb-10">
       <div className="flex flex-col  items-center leading-none">
-        <div className="ti-1 font-porsche text-[8rem]">
+        <div className="ti-1 dark:text-white  font-porsche text-[8rem]">
           PORSCHE
           <div className="text-right text-[6rem] text-red-800">911</div>
         </div>
@@ -18,14 +18,14 @@ function Home() {
             src={img1}
             alt="porsche side image"
           />
-          <div className="pa-1 absolute top-2 left-10 w-1/3 font-poppins text-lg font-medium">
+          <div className="pa-1 dark:text-white  absolute top-2 left-10 w-1/3 font-poppins text-lg font-medium">
             “Driving a 911 is a therapy session on wheels. You lose yourself in
             the car and find peace.” <br />– Magnus Walker
           </div>
         </div>
       </div>
       <div>
-        <img className="svg1 pr-1" src={svg1} alt="" />
+        <img className="svg1 pr-1 " src={svg1} alt="" />
       </div>
       <div>
         <img className="svg1 pr-1" src={svg2} alt="" />

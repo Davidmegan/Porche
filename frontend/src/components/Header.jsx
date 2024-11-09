@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
+import ThemeToggle from "./ThemeToggle";
 
 function Header() {
   return (
-    <div className="head flex justify-between items-center px-4 pt-2">
+    <div className="head flex dark:text-white  justify-between items-center px-4 pt-2">
       <div>
         <img className="h-16" src={logo} alt="" />
       </div>
@@ -32,7 +33,10 @@ function Header() {
           </span>
         </a>
       </div>
-      <div className="w-[100px]"></div>
+      <div className="w-[100px]">
+        {" "}
+        <ThemeToggle />
+      </div>
     </div>
   );
 }
