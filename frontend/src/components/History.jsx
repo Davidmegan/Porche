@@ -19,13 +19,15 @@ function History() {
       </div>
       <div>
         <div className="ti-3">
-          <h1 className="text-8xl font-medium font-porsche">History</h1>
-          <div className="text-left font-porsche">
+          <h1 className="text-8xl dark:text-white  font-medium font-porsche">
+            History
+          </h1>
+          <div className="text-left dark:text-white  font-porsche">
             Origin: <ReactCountryFlag countryCode="DE" svg />
           </div>
           <h2 className="text-5xl py-4 font-porsche text-red-800">Porsche</h2>
         </div>
-        <p className="pa-3 font-poppins leading-6 pt-10">
+        <p className="pa-3 dark:text-white  font-poppins leading-6 pt-10">
           Porsche, founded in 1931 by Ferdinand Porsche, began as an engineering
           firm and introduced its first car, the 356, in 1948. Known for its
           innovation and performance, Porsche has become an icon in the
